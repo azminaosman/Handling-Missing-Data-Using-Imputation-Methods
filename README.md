@@ -12,7 +12,7 @@ This project explores practical and effective approaches to handling missing dat
 
 In real-world data projects, missing values are unavoidable—especially in large administrative and operational datasets. How missing data is handled can significantly influence analytical results, business decisions, and policy outcomes.
 
-This project demonstrates practical approaches to improving data quality rather than discarding valuable information. It highlights the importance of choosing appropriate imputation techniques to ensure analyses remain accurate, reliable, and trustworthy—skills that are essential for data analysts, data scientists, and decision-makers working with imperfect real-world data.
+This study demonstrates practical approaches to improving data quality rather than discarding valuable information. It highlights the importance of choosing appropriate imputation techniques to ensure analyses remain accurate, reliable, and trustworthy—skills that are essential for data analysts, data scientists, and decision-makers working with imperfect real-world data.
 
 ---
 
