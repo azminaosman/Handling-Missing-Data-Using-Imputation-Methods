@@ -26,6 +26,42 @@ The table below summarizes the imputation methods used in this study, including 
 | **KNN** | Machine Learning-based (Multivariate) | Use k-nearest neighbors to estimate missing values based on feature similarity. | `sklearn.impute.KNNImputer` |
 | **MICE** | Multiple Imputation (Multivariate, Iterative) | Iteratively models each variable with missing data using other variables, generating more accurate imputations. | `sklearn.impute.IterativeImputer` or `fancyimpute.MICE` |
 
+<p style="font-size:10px">
+
+<table>
+  <tr>
+    <th>Method</th>
+    <th>Technique</th>
+    <th>Description</th>
+    <th>Python Library</th>
+  </tr>
+  <tr>
+    <td>Mean</td>
+    <td>Simple Imputation (Univariate)</td>
+    <td>Replace missing values with the mean of observed values. Suitable for symmetric distributions.</td>
+    <td><code>sklearn.impute.SimpleImputer(strategy='mean')</code></td>
+  </tr>
+  <tr>
+    <td>Median</td>
+    <td>Simple Imputation (Univariate)</td>
+    <td>Replace missing values with the median. More robust to outliers than mean.</td>
+    <td><code>sklearn.impute.SimpleImputer(strategy='median')</code></td>
+  </tr>
+  <tr>
+    <td>KNN</td>
+    <td>Machine Learning-based (Multivariate)</td>
+    <td>Use k-nearest neighbors to estimate missing values based on feature similarity.</td>
+    <td><code>sklearn.impute.KNNImputer</code></td>
+  </tr>
+  <tr>
+    <td>MICE</td>
+    <td>Multiple Imputation (Multivariate, Iterative)</td>
+    <td>Iteratively models each variable with missing data using other variables, generating more accurate imputations.</td>
+    <td><code>sklearn.impute.IterativeImputer</code> or <code>fancyimpute.MICE</code></td>
+  </tr>
+</table>
+
+</p>
 
 ### 🔄 Experimental Workflow
 
