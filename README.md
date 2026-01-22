@@ -2,26 +2,9 @@
 
 ## 📌 Overview
 
-Administrative data plays a vital role in research, policy development, and operational decision-making. However, these datasets often contain missing values due to incomplete reporting, data entry errors, or system limitations. If not handled properly, missing data can lead to biased results and reduced analytical reliability.
+Administrative data—such as records from hospitals, schools, or government agencies—is essential for research, policy decisions, and daily operations. However, these datasets often contain missing values due to incomplete reporting, human error, or system glitches. Ignoring these gaps can lead to misleading results and unreliable analyses.
 
-This project explores practical and effective approaches to handling missing data using imputation techniques. By comparing both simple and advanced methods, the study aims to identify strategies that improve data quality while preserving the original characteristics of the data.
-
----
-
-## ❓ Why This Matters
-
-In real-world data projects, missing values are unavoidable—especially in large administrative and operational datasets. How missing data is handled can significantly influence analytical results, business decisions, and policy outcomes.
-
-This study demonstrates practical approaches to improving data quality rather than discarding valuable information. It highlights the importance of choosing appropriate imputation techniques to ensure analyses remain accurate, reliable, and trustworthy—skills that are essential for data analysts, data scientists, and decision-makers working with imperfect real-world data.
-
----
-
-## 🎯 Project Goals
-
-- Understand how missing data affects administrative datasets  
-- Compare commonly used imputation techniques  
-- Evaluate how dataset size and missingness level influence imputation performance  
-- Identify reliable methods for maintaining data accuracy and integrity  
+Rather than simply deleting incomplete records, this project explores practical ways to fill in the blanks accurately using imputation techniques. By comparing simple methods (mean or median) with advanced approaches (KNN and MICE), we aim **to identify the most effective strategies for improving data quality**, ensuring datasets remain reliable, accurate, and useful for real-world decision-making
 
 ---
 
