@@ -24,7 +24,7 @@ The table below summarizes the imputation methods used in this study, including 
 The figure below illustrates the overall experimental workflow, including **missing data simulation**, **imputation**, and **evaluation**.
 
 <p align="center">
-  <img src="Images/experimental-setup-workflow.png" width="750">
+  <img src="Images/experimental-setup-workflow.png" width="550">
 </p>
 
 **Workflow Steps:**
