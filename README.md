@@ -16,7 +16,7 @@ In this study, a synthetic dataset (simulated_medical_records) designed to mimic
 The table below summarizes the imputation methods used in this study, including the technique, a brief description, and the Python library applied.
 
 <p align="center">
-![image](https://github.com/azminaosman/Handling-Missing-Data-Using-Imputation-Methods/blob/a7235f682f4829fe1211ac3f1c7e53e6f853d063/Images/imputation-methods-details.png)
+  <img src="images/imputation-methods-details.png" width="750">
 </p>
 
 ### 🔄 Experimental Workflow
