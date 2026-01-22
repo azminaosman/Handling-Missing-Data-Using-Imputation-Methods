@@ -16,7 +16,7 @@ In this study, a synthetic dataset (simulated_medical_records) designed to mimic
 The table below summarizes the imputation methods used in this study, including the technique, a brief description, and the Python library applied.
 
 <p align="center">
-  <img src="images/imputation-methods-details.png" width="750">
+  <img src="Images/imputation-methods-details.png" width="750">
 </p>
 
 ### 🔄 Experimental Workflow
@@ -24,7 +24,7 @@ The table below summarizes the imputation methods used in this study, including 
 The figure below illustrates the overall experimental workflow, including **missing data simulation**, **imputation**, and **evaluation**.
 
 <p align="center">
-  <img src="images/experimental-setup-workflow.png" width="750">
+  <img src="Images/experimental-setup-workflow.png" width="750">
 </p>
 
 **Workflow Steps:**
