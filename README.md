@@ -7,50 +7,36 @@ Administrative data—such as records from hospitals, schools, or government age
 Rather than simply deleting incomplete records, this project explores practical ways to fill in the blanks accurately using imputation techniques. By comparing simple methods (mean or median) with advanced approaches (KNN and MICE), we aim **to identify the most effective strategies for improving data quality**, ensuring datasets remain reliable, accurate, and useful for real-world decision-making
 
 ---
+  
+## ⚙️ Methodology 
+In this study, a synthetic dataset (simulated_medical_records) designed to mimic clinical administrative data, consisting of 20 continuous variables such as body mass index (BMI), blood pressure, glucose, and cholesterol. The dataset is generated in three different sample sizes (n = 100, 3,000, and 50,000) to represent small to large-scale administrative records
 
-## 🧪 Methodology
+### 📋 Imputation Methods Overview
 
-To simulate real-world administrative data scenarios, a synthetic clinical dataset was generated containing **20 numerical variables** such as BMI, blood pressure, and glucose levels.
+The table below summarizes the imputation methods used in this study, including the technique, a brief description, and the Python library applied.
 
-### Experimental Setup
+<p align="center">
+  <img src="images/imputation-methods-details.png" width="750">
+</p>
 
-**Dataset Sizes**
-- Small: 100 records  
-- Medium: 3,000 records  
-- Large: 50,000 records  
+### 🔄 Experimental Workflow
 
-**Missing Data Mechanism**
-- Missing Completely at Random (MCAR)
+The figure below illustrates the overall experimental workflow, including **missing data simulation**, **imputation**, and **evaluation**.
 
-**Missingness Levels**
-- 5%  
-- 20%  
-- 50%
+<p align="center">
+  <img src="images/experimental-setup-workflow.png" width="750">
+</p>
 
----
+**Workflow Steps:**
 
-## 🧩 Imputation Methods Compared
+1. **Missing Data Simulation**  
+   Missing values are introduced using the `mdatagen` Python library, simulating missingness at **5%**, **20%**, and **50%** under a **Missing Completely at Random (MCAR)** mechanism.
 
-- **Mean Imputation**  
-  Simple and fast, but sensitive to outliers
+2. **Imputation**  
+   The selected imputation methods are applied using appropriate Python libraries to estimate and replace missing values.
 
-- **Median Imputation**  
-  More robust to outliers than mean imputation
-
-- **K-Nearest Neighbors (KNN)**  
-  Estimates missing values using similarity between observations
-
-- **Multiple Imputation by Chained Equations (MICE)**  
-  An advanced, iterative approach that models relationships between variables
-
----
-
-## 📊 Evaluation Metrics
-
-Each imputed dataset was compared with the original complete dataset using:
-
-- **Normalized Root Mean Squared Error (NRMSE)** to measure imputation accuracy  
-- **Distribution analysis** to assess preservation of the original data structure  
+3. **Evaluation**  
+   The imputed datasets are evaluated by comparing them with the original complete dataset using **Normalized Root Mean Squared Error (NRMSE)** to measure accuracy, along with **distribution plots** to assess how well each method preserves the original data structure.
 
 ---
 
