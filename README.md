@@ -16,7 +16,7 @@ In this study, a synthetic dataset (simulated_medical_records) designed to mimic
 The table below summarizes the imputation methods used in this study, including the technique, a brief description, and the Python library applied.
 
 <p align="center">
-  <img src="Images/imputation-methods-details.png" width="750">
+  <img src="Images/imputation-methods-details.png" width="550">
 </p>
 
 ### 🔄 Experimental Workflow
