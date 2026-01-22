@@ -40,14 +40,27 @@ The figure below illustrates the overall experimental workflow, including **miss
 
 ---
 
-## 🔍 Key Findings
+## 🔍 Findings
 
-- Larger datasets consistently resulted in better imputation accuracy  
-- **MICE** achieved the best performance across all dataset sizes and missingness levels  
-- **KNN** performed well, particularly at lower missingness levels  
-- Simple methods (mean and median) became less reliable as missingness increased and tended to distort data distributions  
+### 📈 Imputation Accuracy
 
-These findings indicate that while simple imputation techniques are easy to implement, advanced methods are more effective for maintaining data quality in complex administrative datasets.
+The results show that **Multiple Imputation by Chained Equations (MICE)** consistently achieved the highest imputation accuracy across all sample sizes (**n = 100, 3,000, and 50,000**) and missingness levels (**5%, 20%, and 50%**). **K-Nearest Neighbors (KNN)** followed closely, demonstrating strong performance, particularly in larger datasets. In contrast, traditional approaches such as **Mean** and **Median** imputation produced higher **Normalized Root Mean Square Error (NRMSE)** values, with error magnitudes increasing as the proportion of missing data grew.
+
+<p align="center">
+  <img src="images/imputation-accuracy-result.png" width="750">
+</p>
+
+
+### 📉 Distribution Preservation
+
+The distributional results illustrate how each imputation method affects the shape of the **BMI** variable. **MICE** consistently preserved the original data distribution across all experimental scenarios, even at **50% missingness**. **KNN** also maintained a close approximation, particularly as the sample size increased.
+
+In contrast, **Mean** and **Median** imputation introduced noticeable distortions, most notably sharp central peaks, indicating oversmoothing and bias toward central values. These effects were especially pronounced in smaller datasets (**n = 100**), highlighting the sensitivity of simple imputation methods to data sparsity.
+
+<p align="center">
+  <img src="images/distribution-comparison.png" width="750">
+</p>
+
 
 ---
 
@@ -61,8 +74,7 @@ This project highlights the importance of selecting appropriate imputation techn
 
 - Python  
 - scikit-learn (`SimpleImputer`, `KNNImputer`, `IterativeImputer`)  
-- Statistical evaluation using NRMSE  
-- Data simulation and visualization  
+- Statistical evaluation using NRMSE    
 
 ---
 
