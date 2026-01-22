@@ -19,6 +19,14 @@ The table below summarizes the imputation methods used in this study, including 
   <img src="Images/imputation-methods-details.png" width="550">
 </p>
 
+| **Method** | **Technique** | **Description** | **Python Library** |
+|------------|---------------|-----------------|------------------|
+| **Mean** | Simple Imputation (Univariate) | Replace missing values with the mean of observed values. Suitable for symmetric distributions. | `sklearn.impute.SimpleImputer(strategy='mean')` |
+| **Median** | Simple Imputation (Univariate) | Replace missing values with the median. More robust to outliers than mean. | `sklearn.impute.SimpleImputer(strategy='median')` |
+| **KNN** | Machine Learning-based (Multivariate) | Use k-nearest neighbors to estimate missing values based on feature similarity. | `sklearn.impute.KNNImputer` |
+| **MICE** | Multiple Imputation (Multivariate, Iterative) | Iteratively models each variable with missing data using other variables, generating more accurate imputations. | `sklearn.impute.IterativeImputer` or `fancyimpute.MICE` |
+
+
 ### 🔄 Experimental Workflow
 
 The figure below illustrates the overall experimental workflow, including **missing data simulation**, **imputation**, and **evaluation**.
