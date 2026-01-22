@@ -64,7 +64,7 @@ The distributional results illustrate how each imputation method affects the sha
 
 ## ✅ Conclusion
 
-This project highlights the importance of selecting appropriate imputation techniques when working with incomplete administrative data. Advanced methods such as **MICE** provide more accurate and reliable results, especially when data quality is critical for analysis and decision-making. The findings support the use of robust imputation strategies in real-world administrative and clinical data applications.
+This study shows that both dataset size and the level of missing data strongly affect imputation performance. Larger datasets generally improved accuracy, and among the methods tested, **MICE consistently performed best**, preserving the original data distribution across all scenarios, followed by **KNN**. Simple methods like **mean** and **median** became less reliable as missingness increased, often distorting the data. While these results provide useful insights, the study is limited to simulated continuous datasets under a **MCAR** mechanism. Future work could explore other missingness mechanisms (e.g., MAR, MNAR) and evaluate performance on categorical or mixed-type datasets to better reflect real-world complexities.
 
 ---
 
